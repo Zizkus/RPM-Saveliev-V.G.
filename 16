@@ -3,9 +3,9 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Введите массу в килограммах: ");
-        int kilograms = Convert.ToInt32(Console.ReadLine());
-        int centners = kilograms / 100;
-        Console.WriteLine($"Число полных центнеров в {kilograms} килограммах: {centners}");
+        Console.Write("Введите расстояние в сантиметрах: ");
+        int centimeters = Convert.ToInt32(Console.ReadLine());
+        int meters = centimeters / 100;
+        Console.WriteLine($"Число полных метров в {centimeters} сантиметрах: {meters}");
     }
 }
