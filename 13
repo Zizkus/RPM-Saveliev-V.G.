@@ -1,0 +1,23 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите первое число: ");
+        int firstNumber = int.Parse(Console.ReadLine());
+        Console.Write("Введите второе число: ");
+        int secondNumber = int.Parse(Console.ReadLine());
+        if (firstNumber == secondNumber)
+        {
+            Console.WriteLine("Числа равны.");
+        }
+        else if (firstNumber > secondNumber)
+        {
+            Console.WriteLine($"Первое число ({firstNumber}) больше второго числа ({secondNumber}).");
+        }
+        else
+        {
+            Console.WriteLine($"Первое число ({firstNumber}) меньше второго числа ({secondNumber}).");
+        }
+    }
+}
