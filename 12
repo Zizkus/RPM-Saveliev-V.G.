@@ -1,0 +1,17 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите целое число: ");
+        int number = int.Parse(Console.ReadLine());
+        string numberString = Math.Abs(number).ToString(); // Используем Math.Abs для работы с отрицательными числами
+        if (numberString.Length < 2)
+        {
+            Console.WriteLine("Ошибка: число должно содержать как минимум две цифры.");
+            return;
+        }
+        char secondDigit = numberString[1]; // Индекс 1 соответствует второй цифре
+        Console.WriteLine($"Вторая цифра числа: {secondDigit}");
+    }
+}
