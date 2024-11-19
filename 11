@@ -1,0 +1,18 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите четырехзначное натуральное число: ");
+        int number = int.Parse(Console.ReadLine());
+        if (number < 1000 || number > 9999)
+        {
+            Console.WriteLine("Ошибка: введите четырехзначное натуральное число.");
+            return;
+        }
+        int tens = (number / 10) % 10; // Вторая цифра
+        int hundreds = (number / 100) % 10; // Третья цифра
+        int twoDigitNumber = hundreds * 10 + tens;
+        Console.WriteLine($"Двузначное число, состоящее из средних цифр: {twoDigitNumber}");
+    }
+}
