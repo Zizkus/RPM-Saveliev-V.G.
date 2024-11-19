@@ -1,0 +1,11 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите массу в килограммах: ");
+        int kilograms = Convert.ToInt32(Console.ReadLine());
+        int tons = kilograms / 1000;
+        Console.WriteLine($"Число полных тонн в {kilograms} килограммах: {tons}");
+    }
+}
