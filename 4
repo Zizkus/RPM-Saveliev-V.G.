@@ -1,0 +1,23 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите размер массива n: ");
+        int n = int.Parse(Console.ReadLine());
+        int[] array = new int[n];
+        Console.WriteLine("Введите элементы массива:");
+        for (int i = 0; i < n; i++)
+        {
+            array[i] = int.Parse(Console.ReadLine());
+        }
+        Console.WriteLine("Элементы, которые больше предыдущего:");
+        for (int i = 1; i < n; i++) // Начинаем с 1, чтобы сравнивать с предыдущим элементом
+        {
+            if (array[i] > array[i - 1])
+            {
+                Console.WriteLine(array[i]);
+            }
+        }
+    }
+}
